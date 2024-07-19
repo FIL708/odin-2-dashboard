@@ -4,21 +4,403 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Admin Dashboard</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="styles/styles.css" />
         <link rel="stylesheet" href="styles/reset.css" />
     </head>
     <body class="body">
-        <section class="sidebar">Sidebar</section>
+        <section class="sidebar">
+            <div class="logo">
+                <a href="#" target="_blank"
+                    ><img
+                        src="assets/icons/logo.svg"
+                        alt="logo"
+                        srcset=""
+                    />Dashboard</a
+                >
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li>
+                        <a href="#"
+                            ><img
+                                class="nav-icon"
+                                src="assets/icons/home.svg"
+                                alt="home"
+                            />Home</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img
+                                class="nav-icon"
+                                src="assets/icons/profile.svg"
+                                alt="profile"
+                            />Profile</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img
+                                class="nav-icon"
+                                src="assets/icons/message.svg"
+                                alt="messages"
+                            />Messages</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img
+                                class="nav-icon"
+                                src="assets/icons/history.svg"
+                                alt="history"
+                            />History</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img
+                                class="nav-icon"
+                                src="assets/icons/tasks.svg"
+                                alt="tasks"
+                            />Tasks</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img
+                                class="nav-icon"
+                                src="assets/icons/communities.svg"
+                                alt="communities"
+                            />Communications</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <nav class="navigation">
+                <ul>
+                    <li>
+                        <a href="#"
+                            ><img
+                                class="nav-icon"
+                                src="assets/icons/settings.svg"
+                                alt="settings"
+                            />Settings</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img
+                                class="nav-icon"
+                                src="assets/icons/support.svg"
+                                alt="support"
+                            />Support</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img
+                                class="nav-icon"
+                                src="assets/icons/privacy.svg"
+                                alt="privacy"
+                            />Privacy</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </section>
         <header class="header">
-            <div class="search-bar">search-bar</div>
-            <div class="avatar-section">avatar-section</div>
-            <div class="greetings">greetings</div>
-            <div class="controls">controls</div>
+            <div class="search-bar">
+                <img
+                    class="icon"
+                    src="assets/icons/search.svg"
+                    alt="search"
+                    srcset=""
+                />
+                <input
+                    class="search-input"
+                    type="search"
+                    name="search"
+                    id="search"
+                />
+            </div>
+            <div class="avatar-section">
+                <img
+                    class="icon"
+                    src="assets/icons/bell.svg"
+                    alt="notification"
+                />
+                <img
+                    class="avatar avatar-sm"
+                    src="assets/avatars/cat.svg"
+                    alt="avatar"
+                />
+                <span>Morgan Oakley</span>
+            </div>
+            <div class="greetings">
+                <img
+                    class="avatar avatar-xl"
+                    src="assets/avatars/cat.svg"
+                    alt="avatar"
+                    srcset=""
+                />
+                <span class="greetings-text">Hi there,</span>
+                <span class="greetings-name">Morgan Oakley (@morgan)</span>
+            </div>
+            <div class="controls">
+                <button class="button">New</button>
+                <button class="button">Update</button>
+                <button class="button">Share</button>
+            </div>
         </header>
         <main class="main">
-            <section class="projects">projects</section>
-            <section class="announcements">announcements</section>
-            <section class="trending">trending</section>
+            <section class="projects">
+                <h3 class="section-h">Your projects</h3>
+                <ul>
+                    <li class="project-card">
+                        <h4>Super Cool Project</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Libero alias odit impedit et. Asperiores,
+                            reprehenderit eaque. Velit quae sit aut
+                            necessitatibus unde eum consectetur explicabo, sint,
+                            hic totam at ea.
+                        </p>
+                        <div class="project-buttons">
+                            <img
+                                src="assets/icons/star.svg"
+                                alt="star"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/icons/eye.svg"
+                                alt="eye"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/icons/fork.svg"
+                                alt="fork"
+                                class="icon"
+                            />
+                        </div>
+                    </li>
+                    <li class="project-card">
+                        <h4>Less Cool Project</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Libero alias odit impedit et. Asperiores,
+                            reprehenderit eaque. Velit quae sit aut
+                            necessitatibus unde eum consectetur explicabo, sint,
+                            hic totam at ea.
+                        </p>
+                        <div class="project-buttons">
+                            <img
+                                src="assets/icons/star.svg"
+                                alt="star"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/icons/eye.svg"
+                                alt="eye"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/icons/fork.svg"
+                                alt="fork"
+                                class="icon"
+                            />
+                        </div>
+                    </li>
+                    <li class="project-card">
+                        <h4>Impossible App</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Libero alias odit impedit et. Asperiores,
+                            reprehenderit eaque. Velit quae sit aut
+                            necessitatibus unde eum consectetur explicabo, sint,
+                            hic totam at ea.
+                        </p>
+                        <div class="project-buttons">
+                            <img
+                                src="assets/icons/star.svg"
+                                alt="star"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/icons/eye.svg"
+                                alt="eye"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/icons/fork.svg"
+                                alt="fork"
+                                class="icon"
+                            />
+                        </div>
+                    </li>
+                    <li class="project-card">
+                        <h4>Easy Peasy App</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Libero alias odit impedit et. Asperiores,
+                            reprehenderit eaque. Velit quae sit aut
+                            necessitatibus unde eum consectetur explicabo, sint,
+                            hic totam at ea.
+                        </p>
+                        <div class="project-buttons">
+                            <img
+                                src="assets/icons/star.svg"
+                                alt="star"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/icons/eye.svg"
+                                alt="eye"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/icons/fork.svg"
+                                alt="fork"
+                                class="icon"
+                            />
+                        </div>
+                    </li>
+                    <li class="project-card">
+                        <h4>Ad Blocker</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Libero alias odit impedit et. Asperiores,
+                            reprehenderit eaque. Velit quae sit aut
+                            necessitatibus unde eum consectetur explicabo, sint,
+                            hic totam at ea.
+                        </p>
+                        <div class="project-buttons">
+                            <img
+                                src="assets/icons/star.svg"
+                                alt="star"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/icons/eye.svg"
+                                alt="eye"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/icons/fork.svg"
+                                alt="fork"
+                                class="icon"
+                            />
+                        </div>
+                    </li>
+                    <li class="project-card">
+                        <h4>Money Maker</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Libero alias odit impedit et. Asperiores,
+                            reprehenderit eaque. Velit quae sit aut
+                            necessitatibus unde eum consectetur explicabo, sint,
+                            hic totam at ea.
+                        </p>
+                        <div class="project-buttons">
+                            <img
+                                src="assets/icons/star.svg"
+                                alt="star"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/icons/eye.svg"
+                                alt="eye"
+                                class="icon"
+                            />
+                            <img
+                                src="assets/icons/fork.svg"
+                                alt="fork"
+                                class="icon"
+                            />
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="announcements">
+                <h3 class="section-h">Announcements</h3>
+                <ul>
+                    <li class="announcements-card">
+                        <h4>Site Maintenance</h4>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Autem, explicabo.
+                        </p>
+                    </li>
+                    <div class="divider"></div>
+                    <li class="announcements-card">
+                        <h4>Community Share Day</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Doloremque repellat laboriosam quia.
+                        </p>
+                    </li>
+                    <div class="divider"></div>
+                    <li class="announcements-card">
+                        <h4>Updated Privacy Policy</h4>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Consequatur in iusto eaque quaerat ab,
+                            voluptatum ex autem nulla laborum odio commodi
+                            obcaecati?
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section class="trending">
+                <h3 class="section-h">Trending</h3>
+                <ul>
+                    <li class="trending-card">
+                        <img
+                            class="avatar avatar-sm"
+                            src="assets/avatars/cat.svg"
+                            alt="avatar"
+                            srcset=""
+                        />
+                        <span class="trending-tag">@tegan</span>
+                        <span class="trending-name">World Peace Builder</span>
+                    </li>
+                    <li class="trending-card">
+                        <img
+                            class="avatar avatar-sm"
+                            src="assets/avatars/dog.svg"
+                            alt="avatar"
+                            srcset=""
+                        />
+                        <span class="trending-tag">@morhan</span>
+                        <span class="trending-name">Super Cool Project</span>
+                    </li>
+                    <li class="trending-card">
+                        <img
+                            class="avatar avatar-sm"
+                            src="assets/avatars/panda.svg"
+                            alt="avatar"
+                            srcset=""
+                        />
+                        <span class="trending-tag">@kendall</span>
+                        <span class="trending-name">Life Changing App</span>
+                    </li>
+                    <li class="trending-card">
+                        <img
+                            class="avatar avatar-sm"
+                            src="assets/avatars/pigeon.svg"
+                            alt="avatar"
+                            srcset=""
+                        />
+                        <span class="trending-tag">@alex</span>
+                        <span class="trending-name">No Traffic Maker</span>
+                    </li>
+                </ul>
+            </section>
         </main>
     </body>
 </html>
